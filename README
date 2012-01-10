@@ -1,0 +1,32 @@
+This is the song scheduler of the Bide&Musique webradio (www.bide-et-musique.com).
+It's a full-fledged scheduler with features akin to what you'll find in professional
+products such as Selector, however it's also a geeky scheduler. Terminology does
+not follow what is commonly used in radio and the database requirements will
+probably look alien. It's also heavily bent towards automated music internet
+radios: webradios that schedules songs almost 100% of the time without human
+intervention.
+
+Documentation is almost non-existent and will be so for a time. That means
+that the DB schema required by the scheduler is not documented and can only be
+infered from reading the code (sql.inc is good to start since all sql is there).
+Maybe I'll write some scripts to create a sample DB one day.  That stuff should 
+be generic enough to be used by any webradio. In theory, since lack of documentation 
+actually forbids any real use.
+
+That stuff was written somewhen in june 2007 and the code has not changed since.
+I intended to develop a web interface around a sample database to ease integration
+by others but I never found the time.
+
+Technical stuff:
+
+    - Features described in FEATURES or FEATURES-french
+    - The scheduler only schedules the next songs to play. Streaming
+      and more generally handling of audio streams has to taken
+      care of by some third party tool such as Ice or LiquidSoap.
+    - Written in imperative PHP (5.3 will work). Why? Because it is
+      the de facto script language in B&M, and anyway why not?
+    - Pear/Log needed for, hem logging.
+    - MySQL for DB.
+
+Feel free to ask for hints and stuff at <serge.danzanvilliers@gmail.com>
+

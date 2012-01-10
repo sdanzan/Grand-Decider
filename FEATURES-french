@@ -1,0 +1,57 @@
+# $Id: FEATURES 11 2006-07-17 16:20:58Z mouke $
+
+Programmation :
+
+* Respect d'une grille de programmation
+* Programmation d'une liste ordonnée
+* Programmation d'une liste ordonnée en sens inverse
+* Programmation aléatoire
+* Programmation aléatoire par paquets
+* Programmation aléatoire avec respect de quotas de catégories
+* Programmation par cycles de catégories
+* Méta-programmation : choix aléatoire de programmes dans une tranche horaire
+* Programmation d'événements aléatoires au cours d'un programme
+* Programmation d'événements à date fixée au cours d'un programme
+
+Règles associées à une programmation :
+
+* Séparation de chansons
+* Séparation d'artiste
+* Séparation des morceaux au sein d'une liste
+* Séparation sur un critère quelconque à préciser 
+  [un critère est n'importe quel champ 
+   descriptif des morceaux de la base de données]
+* Contrôle des enchaînements sur un critère quelconque
+* Contrôle des enchaînements en fonction des listes auxquelles
+  appartiennent les morceaux
+* Contrôle de la moyenne mobile d'un critère quelconque
+* Contrôle du nombre de morceaux vérifiant un critère donné
+  dans une plage de temps donnée
+* Contrôle du nombre de morceaux appartenant à une liste donnée
+  dans une plage de temps donnée
+* Roulement des plages horaires de diffusion
+* Roulement des plages horaires de diffusion par morceau
+* Contrôle intelligent des enchaînements en fonction de la longueur
+  des morceaux
+* Contrôle de critère
+* Pour chaque type de règle : autant de règles que l'on veut
+* Groupement des règles
+* Association d'un groupe de règle à un programme (partage possible entre programmes)
+
+Requêtes
+
+* Prise en compte en temps réel d'une pile contenant des demandes
+  externe de morceaux à diffuser
+* Ordonnancement des requêtes par priorité
+* Contrôle de la fréquence de passage des requêtes
+
+Habillage
+
+* Jingles spécifiques au départ des programmes
+* Jingles spécifiques en sortie de programme
+* Jingles spécifiques par programmes
+* Jingles spécifiques pour les événements
+* Jingles spécifiques par chanson, artiste ou liste de chansons
+* Contrôle de la fréquence des jingles
+* Séparation de jingles
+* Affectation de poids aux jingles

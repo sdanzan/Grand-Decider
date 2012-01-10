@@ -1,0 +1,53 @@
+# $Id: FEATURES 11 2006-07-17 16:20:58Z mouke $
+
+Scheduling:
+
+* Scheduling according to a grid
+* Ordered list scheduling
+* Reverse order list scheduling
+* Random scheduling
+* Random scheduling in groups
+* Random scheduling with categories quotas
+* Scheduling by cycling through categories
+* Meta-scheduling: random choice of playlists in a given timeslice
+* Scheduling of random events during play
+* Shceduling of dated events during play
+
+Scheduling rules by timeslices:
+
+* Song separation
+* Artist separation
+* Playlist separation
+* Criteria based separation
+  [a criteria is any descriptive field in your song database]
+* Control linking of songs on any criteria
+* Control linking of songs according to songs playlists
+* Control of moving average of any criteria
+* Control of the number of songs matching a given criteria
+  in a given time range
+* Control of the numbers songs belonging to a given playlist
+  in a given time range
+* Hourly rotations
+* Hourly rotations by songs
+* Smart linking according to songs length
+* Control of any criteria
+* Any number of rules of any type
+* Rule grouping
+* Rules group associated to scheduling slices
+
+Requests:
+
+* Scheduling of "out of programmation" requests
+* Scheduling of requests by priority
+* Control of request frequency
+
+Links:
+
+* Specific jingle at programs start
+* Specific jingles at program end
+* Specific jingles by programs
+* Specific jingles by events
+* Specific jingles by song, artist or playlist
+* Jingles frequency control
+* Jingles separation
+* Weighted jingles
