@@ -151,10 +151,22 @@ function D_SQL_Convert_Filter_To_SQL ($dbo, $filter)
     {
         $when = $filter['smart_dayparts']['when'];
         $margin = 12 / $filter['smart_dayparts']['parts'];
-        $T1 = D_Date (round ($when + $margin * 3600));
-        $T2 = D_Date (round ($when - $margin * 3600));
-        $sqlt = " (TIME(D_S_T.Last_Aired_On) > TIME('$T1')
-                   OR TIME(D_S_T.Last_Aired_On) < TIME('$T2'))";
+        $t1 = round ($when + $margin * 3600);
+        $t2 = round ($when - $margin * 3600);
+        $T1 = D_Date ($t1);
+        $T2 = D_Date ($t2);
+        $t1 = $t1 % 86400;
+        $t2 = $t2 % 86400;
+        if ($t2 <= $t1)
+        {
+            $sqlt = " (TIME(D_S_T.Last_Aired_On) > TIME('$T1')
+                       OR TIME(D_S_T.Last_Aired_On) < TIME('$T2'))";
+        }
+        else
+        {
+            $sqlt = " (TIME(D_S_T.Last_Aired_On) > TIME('$T1')
+                       AND TIME(D_S_T.Last_Aired_On) < TIME('$T2'))";
+        }
         if ($filter['smart_dayparts']['prevs'])
         {
             foreach ($filter['smart_dayparts']['prevs'] as $prev)

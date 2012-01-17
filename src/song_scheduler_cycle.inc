@@ -1,7 +1,7 @@
-<?php // $Id: song_scheduler_cycle.inc 55 2007-04-11 13:58:15Z mouke $
+<?php
 
   /**
-   *  Song scheduler for structured random programs.
+   *  Song scheduler for cycle programs.
    *
    *  @author Serge Danzanvilliers <mouke@bide-et-musique.com>
    *  @package Schedulers
