@@ -29,13 +29,13 @@ function D_Song_Scheduler_ORDERED ($grid_slot, $iteration, $queue, $config, $dbo
         $position = $queue[$queue_id - 1]['position_in_playlist'];
     }
 
-    $LOG->log (sprintf ($MSGS['K_SCHEDULER_ORDERED_NEW_SONG'], $position));
+    $LOG->log (sprintf ($MSGS['K_SCHEDULER_ORDERED_NEW_SONG'], :$position));
 
     $song = array ();
     $try = 0;
     while (! $song && $try <= 1)
     {
-        if ($order < 0 && $position = 0)
+        if ($order < 0 && $position == 0)
         {
             $LOG->log ('Getting last position for reverse order', PEAR_LOG_DEBUG);
             $song = D_SQL_Song_Get_Last_Position ($dbo, $playlist);

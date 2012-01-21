@@ -89,7 +89,7 @@ $MSGS = array (
     "Programmation d'une requête (n° %d)",
 
     'K_SCHEDULER_ORDERED_NEW_SONG' =>
-    "Programme de type ORDERED, choix d'un nouveau morceau (position %d)",
+    "Programme de type ORDERED, choix d'un nouveau morceau (position suivante de %d)",
 
     'K_SCHEDULER_STRUCTURED_RANDOM_NEW_SONG' =>
     "Programme de type STRUCTURED_RANDOM, choix d'un nouveau morceau",
