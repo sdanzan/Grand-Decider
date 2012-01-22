@@ -155,8 +155,8 @@ function D_SQL_Convert_Filter_To_SQL ($dbo, $filter)
         $t2 = round ($when - $margin * 3600);
         $T1 = D_Date ($t1);
         $T2 = D_Date ($t2);
-        $t1 = $t1 % 86400;
-        $t2 = $t2 % 86400;
+        $t1 = $t1 - D_Midnight_Time ($t1);
+        $t2 = $t2 - D_Midnight_Time ($t2);
         if ($t2 <= $t1)
         {
             $sqlt = " (TIME(D_S_T.Last_Aired_On) > TIME('$T1')
